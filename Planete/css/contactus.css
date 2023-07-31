@@ -1,0 +1,146 @@
+* {
+   margin: 0; 
+   padding: 0;
+   font-family: "montserrat", sans-serif;
+   background-image: url(../images/stele.png) ;
+     
+}
+
+.div-home {
+    text-align: right;
+    margin-right: 70px;
+}
+
+.button1 {
+        
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhance-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: 0.25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+    text-shadow: 0 0 0.5em var(--glow-color);
+    /* position: relative; */
+    transition: all 0.3s;
+    margin-top: 40px;
+    /* position: absolute; */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px; 
+    display: inline-block;   
+    /* margin-left: 2000px; */
+    
+ }
+
+ .button1::after{
+    pointer-events: none; 
+    content: "";
+    /* position: absolute; */
+    /* top: 120%; */
+    /* left: 0; */
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: 0.7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+
+ }
+ 
+ .button1:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+ }
+
+ .button1:active {
+    box-shadow: 0 0 0.6em 0.25 em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+ }
+
+
+.contact-section {
+    /* background: url(../images/stele.png); */
+    /* background-size: cover; */
+    padding: 40px 0;
+    margin-top: 100px;
+    border: 0;
+    background-color: transparent;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #cc9fd3;
+    border: 0;
+    background-color: transparent;
+}
+
+.border {
+    width: 100px;
+    height: 10px;
+    background: transparent;
+    margin: 40px auto;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #cc9fd3;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #cc9fd3;
+}
+
+textarea.contact-form-text {
+    resize: none; 
+    height: 120px;
+}
+
+.contact-form-btn {
+    float: right;
+    border: 0;
+    background: #34495e;
+    color: #cc9fd3;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 5s;
+}
+
+.contact-form-btn:hover {
+    background: #a61cbb;
+}
+ 
+@media (min-width: 1100px){
+body {
+        font-size: 200%;
+    }
+}
